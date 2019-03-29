@@ -77,9 +77,9 @@ def show_webcam(mirror=False):
                 with open('tree.txt', 'r') as f:
                     x = int(f.read())
 
-                f = '/home/tyler/PycharmProjects/t2exe COPY-B-U/edges-file/' + 'edge' + str(x) + str(i) + '.png'
-                ff = '/home/tyler/PycharmProjects/t2exe COPY-B-U/edges-file/' + 'rgimg' + str(x) + str(i) + '.png'
-                fff = '/home/tyler/PycharmProjects/t2exe COPY-B-U/edges-file/' + 'rimg' + str(x) + str(i) + '.png'
+                f = '/home/tyler/PycharmProjects/t2eu/edges-file/' + 'edge' + str(x) + str(i) + '.png'
+                ff = '/home/tyler/PycharmProjects/t2eu/edges-file/' + 'rgimg' + str(x) + str(i) + '.png'
+                fff = '/home/tyler/PycharmProjects/t2eu/edges-file/' + 'rimg' + str(x) + str(i) + '.png'
 
                 cv2.imwrite(f, edge)
                 cv2.imwrite(ff, rgimg)
@@ -105,7 +105,8 @@ def main():
         open(fdir + '/tree.txt', 'w+')
 
 
-    t2e.filez('tree.txt', '/home/tyler/PycharmProjects/t2exe/tree.exe')
+    t2e.filez('tree.txt', '/home/tyler/PycharmProjects/t2exe/tree.exe')  #idk what is happening here...should be going to tree.txt and 
+                                                                         #change to new dir- or just make it unpackage its self and not have this issue
 
     time.sleep()
     print 'done with t2e'
