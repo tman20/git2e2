@@ -1,16 +1,17 @@
+# python 2.7 . on ubuntu laptop 
 import cv2
 import os
 import time
 import imutils
 import numpy as np
 import matplotlib
-import t2eDIR as t2e
+import t2eDIR as t2e           #my dir
 
 
 def Start():
     print 'ESC to exit (press it a few times or hold it for a sec), \n' \
-          'SPACE to take a picture, saved all three. The GUI at the beginning \n' \
-          'doesnt work just close it.        Enjoy'
+          'press "a" to take a picture, saved all three. The GUI at the beginning \n' \
+          'if doesnt work just close it, may need to use "ctrl-c".        Enjoy'
 
     yesorno = raw_input('hit y to start t2e')
     print yesorno
